@@ -6,7 +6,7 @@ const {
   getUserByEmail,
   login,
   updateUserPass,
-} = require("../controller/User.js");
+} = require("../Controller/User.js");
 
 const Data = require("../models/user");
 

@@ -67,3 +67,8 @@ exports.getLinkByUser = async (req, res) => {
   const Links = await User.find({ ownerID: usernameId });
   res.status(200).json(Links);
 };
+
+exports.linksByUserId = async (req, res) => {
+  const { email } = req.body;
+  const Links = await User.find({ ownerID: email });
+};
